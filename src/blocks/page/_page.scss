@@ -67,8 +67,6 @@ body {
   font-size: $font-size;
   line-height: $line-height;
   text-align: left;
-  color: $text-color;
-  background-color: $body-bg;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -155,14 +153,8 @@ img {
 }
 
 a {
-  color: $link-color;
   background-color: transparent;
   transition: color 0.3s;
-
-  &:hover,
-  &:focus {
-    color: $link-color--hover;
-  }
 
   // &:visited {
   //   color: $link-color--hover;
@@ -186,7 +178,7 @@ hr {
   margin-top: $typo-margin-vertical * 2;
   margin-bottom: $typo-margin-vertical * 2;
   border: 0;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid;
   overflow: visible;       // Проблема Edge и IE
 }
 
@@ -309,15 +301,12 @@ pre {
 
 code {
   padding: 0.06em 0.3em;
-  color: $text-color;
   background-color: rgba(#000, 0.08);
   border-radius: $border-radius;
 }
 
 kbd {
   padding: 0.06em 0.3em;
-  color: $text-color;
-  background-color: $gray-lightest;
   border-radius: $border-radius;
 
   kbd {
